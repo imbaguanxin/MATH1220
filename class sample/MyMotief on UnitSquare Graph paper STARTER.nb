@@ -1,0 +1,245 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      9300,        237]
+NotebookOptionsPosition[      8418,        213]
+NotebookOutlinePosition[      8887,        231]
+CellTagsIndexPosition[      8844,        228]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Unit Square Graph paper", "Subtitle",
+ CellChangeTimes->{{3.504451629033182*^9, 
+  3.504451636780983*^9}},ExpressionUUID->"1f8178a6-a813-4918-adbd-\
+8136f4d9761c"],
+
+Cell[TextData[{
+ StyleBox["Fill in myMotief with your drawing.",
+  FontWeight->"Bold"],
+ "\n\nThis makes two images - one with graph paper, one without.\nSave the \
+non-graph paper version\n\nUse \[OpenCurlyDoubleQuote]Save Selection As\
+\[CloseCurlyDoubleQuote] under File to save your image.\n"
+}], "Text",
+ CellChangeTimes->{{3.504451668530772*^9, 3.504451685422924*^9}, {
+   3.504451932322349*^9, 3.504451982453521*^9}, 3.504452037998241*^9, {
+   3.693490780413406*^9, 3.693490806083136*^9}, {3.693490846623666*^9, 
+   3.693490914321473*^9}, {3.693579134369565*^9, 3.693579139474325*^9}},
+ FontSize->18,ExpressionUUID->"9e06b86b-36ab-4770-9415-dc872278a6e8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"myMotief", " ", "=", " ", 
+    RowBox[{"{", "\[IndentingNewLine]", "\t\t\t", 
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{"Circle", "[", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{".3", ",", ".3"}], "}"}], ",", " ", ".2"}], "]"}], ","}], 
+      "*)"}], "\[IndentingNewLine]", "\t\t\t", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"Blue", ",", " ", 
+        RowBox[{"Circle", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0.5", ",", " ", "0.5"}], "}"}], ",", " ", ".5", ",", " ", 
+          
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Pi", "/", "2"}], ",", " ", 
+            RowBox[{
+             RowBox[{"3", "/", "2"}], "*", "Pi"}]}], "}"}]}], "]"}]}], "}"}], 
+      ",", "\[IndentingNewLine]", "\t\t\t", 
+      RowBox[{"{", 
+       RowBox[{"Red", ",", " ", 
+        RowBox[{"Circle", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"1", ",", " ", "0"}], "}"}], ",", " ", ".5", ",", " ", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Pi", "/", "2"}], ",", " ", "Pi"}], "}"}]}], "]"}]}], 
+       "}"}], ",", "\[IndentingNewLine]", "\t\t\t", 
+      RowBox[{"{", 
+       RowBox[{"Green", ",", " ", 
+        RowBox[{"Circle", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0.75", ",", " ", "0.5"}], "}"}], ",", " ", ".25", ",", 
+          " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "Pi"}], "}"}]}], "]"}]}], "}"}]}], 
+     "\[IndentingNewLine]", "\t\t\t", 
+     RowBox[{"(*", 
+      RowBox[{"Text", "[", " ", 
+       RowBox[{"\"\<Fill in Your Own Design\>\"", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{".5", ",", " ", "0.5"}], "}"}]}], " ", "]"}], "*)"}], 
+     "\[IndentingNewLine]", "\t\t", "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rotate90", " ", "=", " ", "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", "\[IndentingNewLine]", "\t\t", 
+    RowBox[{
+     RowBox[{
+     "{", "\[IndentingNewLine]", "\t\t\t", "myMotief", "\[IndentingNewLine]", 
+      "\t       ", "}"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     "\t\t", 
+     RowBox[{"{", "\[IndentingNewLine]", "\t\t\t", 
+      RowBox[{
+       RowBox[{"PlotRange", "\[Rule]", " ", 
+        RowBox[{"{", " ", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1"}], "}"}]}], " ", "}"}]}], ",", 
+       "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"AspectRatio", " ", "\[Rule]", " ", "1"}], ",", 
+       "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"GridLines", "\[Rule]", " ", 
+        RowBox[{"{", "  ", 
+         RowBox[{
+          RowBox[{"Range", "[", 
+           RowBox[{"0", ",", "1", ",", " ", ".1"}], "]"}], ",", " ", 
+          RowBox[{"Range", "[", 
+           RowBox[{"0", ",", "1", ",", " ", "0.1"}], "]"}]}], " ", "}"}]}], 
+       ",", "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"GridLinesStyle", " ", "\[Rule]", " ", 
+        RowBox[{"Directive", "[", " ", 
+         RowBox[{"Gray", ",", " ", "Dashed"}], " ", "]"}]}], ",", 
+       "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"Axes", "\[Rule]", " ", "True"}], ",", "\[IndentingNewLine]", 
+       "\t\t\t", 
+       RowBox[{"ImageSize", "\[Rule]", " ", "500"}]}], "\[IndentingNewLine]", 
+      "\t      ", "}"}]}], "\[IndentingNewLine]", "\t\t", "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", "\[IndentingNewLine]", "\t\t", 
+  RowBox[{
+   RowBox[{
+   "{", "\[IndentingNewLine]", "\t\t\t", "myMotief", "\[IndentingNewLine]", 
+    "\t       ", "}"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\t\t", 
+   RowBox[{"{", "\[IndentingNewLine]", "\t\t\t", 
+    RowBox[{
+     RowBox[{"PlotRange", "\[Rule]", " ", 
+      RowBox[{"{", " ", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], " ", "}"}]}], ",", 
+     "\[IndentingNewLine]", "\t\t\t", 
+     RowBox[{"AspectRatio", " ", "\[Rule]", " ", "1"}], ",", 
+     "\[IndentingNewLine]", "\t\t\t", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "500"}]}], "\[IndentingNewLine]", 
+    "\t      ", "}"}]}], "\[IndentingNewLine]", "\t\t", "]"}]}], "Input",
+ CellChangeTimes->{{3.504444333416931*^9, 3.504444392209044*^9}, {
+  3.693490639300598*^9, 3.693490646449461*^9}, {3.693490925913353*^9, 
+  3.693491020766622*^9}, {3.6935066308747883`*^9, 3.693506631597822*^9}, {
+  3.693578456062282*^9, 3.693578514147138*^9}, {3.788186083685089*^9, 
+  3.78818616062234*^9}, {3.7881862017287903`*^9, 3.788186229373328*^9}, {
+  3.7881862926794443`*^9, 3.788186327902259*^9}, {3.788186363733343*^9, 
+  3.78818639738345*^9}, {3.788186433831155*^9, 3.788186593604987*^9}, {
+  3.788186631356565*^9, 3.788186692083951*^9}, {3.7881867668594723`*^9, 
+  3.7881868013196*^9}, {3.788186853838656*^9, 3.78818687026158*^9}, {
+  3.788187286059997*^9, 3.78818735180536*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"067cea53-854e-4203-80b6-26afba572d26"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {RGBColor[0, 0, 1], 
+    CircleBox[{0.5, 0.5}, 0.5, 
+     NCache[{Rational[1, 2] Pi, Rational[3, 2] Pi}, {1.5707963267948966`, 
+      4.71238898038469}]]}, 
+   {RGBColor[1, 0, 0], 
+    CircleBox[{1, 0}, 0.5, 
+     NCache[{Rational[1, 2] Pi, Pi}, {1.5707963267948966`, 
+      3.141592653589793}]]}, 
+   {RGBColor[0, 1, 0], 
+    CircleBox[{0.75, 0.5}, 0.25, NCache[{0, Pi}, {0, 3.141592653589793}]]}},
+  AspectRatio->1,
+  Axes->True,
+  GridLines->{{0., 0.1, 0.2, 0.30000000000000004`, 0.4, 0.5, 
+   0.6000000000000001, 0.7000000000000001, 0.8, 0.9, 1.}, {0., 0.1, 0.2, 
+   0.30000000000000004`, 0.4, 0.5, 0.6000000000000001, 0.7000000000000001, 
+   0.8, 0.9, 1.}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5], 
+    Dashing[{Small, Small}]],
+  ImageSize->500,
+  PlotRange->{{0, 1}, {0, 1}}]], "Output",
+ CellChangeTimes->{{3.788186776699028*^9, 3.78818680177046*^9}, 
+   3.788187308473299*^9, {3.788187348897181*^9, 3.788187352195623*^9}},
+ CellLabel->"Out[65]=",ExpressionUUID->"318633a8-f8d0-4d45-8c15-192242f51b76"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {RGBColor[0, 0, 1], 
+    CircleBox[{0.5, 0.5}, 0.5, 
+     NCache[{Rational[1, 2] Pi, Rational[3, 2] Pi}, {1.5707963267948966`, 
+      4.71238898038469}]]}, 
+   {RGBColor[1, 0, 0], 
+    CircleBox[{1, 0}, 0.5, 
+     NCache[{Rational[1, 2] Pi, Pi}, {1.5707963267948966`, 
+      3.141592653589793}]]}, 
+   {RGBColor[0, 1, 0], 
+    CircleBox[{0.75, 0.5}, 0.25, NCache[{0, Pi}, {0, 3.141592653589793}]]}},
+  AspectRatio->1,
+  ImageSize->500,
+  PlotRange->{{0, 1}, {0, 1}}]], "Output",
+ CellChangeTimes->{{3.788186776699028*^9, 3.78818680177046*^9}, 
+   3.788187308473299*^9, {3.788187348897181*^9, 3.788187352203012*^9}},
+ CellLabel->"Out[66]=",ExpressionUUID->"c36709e9-cb5b-45bb-aed0-8d7942c6f80d"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 169, 3, 53, "Subtitle",ExpressionUUID->"1f8178a6-a813-4918-adbd-8136f4d9761c"],
+Cell[739, 27, 662, 11, 194, "Text",ExpressionUUID->"9e06b86b-36ab-4770-9415-dc872278a6e8"],
+Cell[CellGroupData[{
+Cell[1426, 42, 5181, 121, 787, "Input",ExpressionUUID->"067cea53-854e-4203-80b6-26afba572d26"],
+Cell[6610, 165, 1051, 25, 516, "Output",ExpressionUUID->"318633a8-f8d0-4d45-8c15-192242f51b76"],
+Cell[7664, 192, 726, 17, 517, "Output",ExpressionUUID->"c36709e9-cb5b-45bb-aed0-8d7942c6f80d"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
