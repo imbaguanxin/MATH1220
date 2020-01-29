@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     42699,       1069]
-NotebookOptionsPosition[     40406,       1033]
-NotebookOutlinePosition[     40743,       1048]
-CellTagsIndexPosition[     40700,       1045]
+NotebookDataLength[    116611,       2855]
+NotebookOptionsPosition[    114990,       2822]
+NotebookOutlinePosition[    115329,       2837]
+CellTagsIndexPosition[    115286,       2834]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -114,12 +114,12 @@ Cell[BoxData[
           " ", "0.3"}], "]"}]}], "}"}]}], "\[IndentingNewLine]", "}"}]}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"A", " ", "=", " ", "myMotief"}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"ori", " ", "=", " ", "myMotief"}], ";"}], "\[IndentingNewLine]", 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"r90", " ", "=", " ", 
+    RowBox[{"r9", " ", "=", " ", 
      RowBox[{"GeometricTransformation", "[", " ", 
-      RowBox[{"A", " ", ",", "  ", 
+      RowBox[{"ori", " ", ",", "  ", 
        RowBox[{"RotationTransform", "[", " ", 
         RowBox[{
          RowBox[{"Pi", "/", "2"}], ",", " ", 
@@ -129,9 +129,9 @@ Cell[BoxData[
            RowBox[{"1", "/", "2"}]}], "}"}]}], "]"}]}], "  ", "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"r180", " ", "=", " ", 
+    RowBox[{"r18", " ", "=", " ", 
      RowBox[{"GeometricTransformation", "[", " ", 
-      RowBox[{"A", " ", ",", "  ", 
+      RowBox[{"ori", " ", ",", "  ", 
        RowBox[{"RotationTransform", "[", " ", 
         RowBox[{"Pi", ",", " ", 
          RowBox[{"{", 
@@ -140,9 +140,9 @@ Cell[BoxData[
            RowBox[{"1", "/", "2"}]}], "}"}]}], "]"}]}], "  ", "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"r270", "  ", "=", " ", 
+    RowBox[{"r27", "  ", "=", " ", 
      RowBox[{"GeometricTransformation", "[", " ", 
-      RowBox[{"A", " ", ",", "  ", 
+      RowBox[{"ori", " ", ",", "  ", 
        RowBox[{"RotationTransform", "[", " ", 
         RowBox[{
          RowBox[{"3", " ", "*", " ", 
@@ -153,9 +153,9 @@ Cell[BoxData[
            RowBox[{"1", "/", "2"}]}], "}"}]}], "]"}]}], "  ", "]"}]}], ";"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"a", " ", "=", " ", 
+    RowBox[{"f1", " ", "=", " ", 
      RowBox[{"GeometricTransformation", "[", 
-      RowBox[{"A", ",", " ", 
+      RowBox[{"ori", ",", " ", 
        RowBox[{"ReflectionTransform", "[", 
         RowBox[{
          RowBox[{"{", 
@@ -166,9 +166,9 @@ Cell[BoxData[
            RowBox[{"1", "/", "2"}]}], "}"}]}], "]"}]}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"b", " ", "=", " ", 
+    RowBox[{"f2", " ", "=", " ", 
      RowBox[{"GeometricTransformation", "[", 
-      RowBox[{"A", ",", " ", 
+      RowBox[{"ori", ",", " ", 
        RowBox[{"ReflectionTransform", "[", 
         RowBox[{
          RowBox[{"{", 
@@ -180,9 +180,9 @@ Cell[BoxData[
            RowBox[{"1", "/", "2"}]}], "}"}]}], "]"}]}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"c", " ", "=", " ", 
+    RowBox[{"f3", " ", "=", " ", 
      RowBox[{"GeometricTransformation", "[", 
-      RowBox[{"A", ",", " ", 
+      RowBox[{"ori", ",", " ", 
        RowBox[{"ReflectionTransform", "[", 
         RowBox[{
          RowBox[{"{", 
@@ -194,9 +194,9 @@ Cell[BoxData[
            RowBox[{"1", "/", "2"}]}], "}"}]}], "]"}]}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"d", " ", "=", " ", 
+    RowBox[{"f4", " ", "=", " ", 
      RowBox[{"GeometricTransformation", "[", 
-      RowBox[{"A", ",", " ", 
+      RowBox[{"ori", ",", " ", 
        RowBox[{"ReflectionTransform", "[", 
         RowBox[{
          RowBox[{"{", 
@@ -210,35 +210,35 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"{", 
       RowBox[{"Graphics", "[", 
-       RowBox[{"A", ",", "SETTING1by1"}], "]"}], "}"}], ",", " ", 
+       RowBox[{"ori", ",", "SETTING1by1"}], "]"}], "}"}], ",", " ", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"Graphics", "[", 
-       RowBox[{"r90", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
+       RowBox[{"r9", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"Graphics", "[", 
-       RowBox[{"r180", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
+       RowBox[{"r18", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"Graphics", "[", 
-       RowBox[{"r270", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
+       RowBox[{"r27", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"Graphics", "[", 
-       RowBox[{"a", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
+       RowBox[{"f1", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"Graphics", "[", 
-       RowBox[{"b", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
+       RowBox[{"f2", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"Graphics", "[", 
-       RowBox[{"c", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
+       RowBox[{"f3", ",", "SETTING1by1"}], "]"}], "}"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"Graphics", "[", 
-       RowBox[{"d", ",", "SETTING1by1"}], "]"}], "}"}]}], "]"}]}]}]], "Input",\
+       RowBox[{"f4", ",", "SETTING1by1"}], "]"}], "}"}]}], "]"}]}]}]], "Input",\
 
  CellChangeTimes->{{3.788789354649444*^9, 3.7887893782632923`*^9}, {
    3.788789925229869*^9, 3.788789931447975*^9}, 3.7887902956208887`*^9, {
@@ -265,9 +265,12 @@ Cell[BoxData[
    3.78914514458104*^9, 3.789145178302453*^9}, {3.789145272145647*^9, 
    3.7891453808394823`*^9}, {3.789145410926153*^9, 3.7891454797979927`*^9}, {
    3.789145515997858*^9, 3.789145543162758*^9}, {3.789145634202284*^9, 
-   3.7891457568906107`*^9}, 
-   3.789145862260446*^9},ExpressionUUID->"411e34a4-abc9-4390-a706-\
-fdad7ff3eaeb"],
+   3.7891457568906107`*^9}, 3.789145862260446*^9, {3.7893121677841797`*^9, 
+   3.7893121705666513`*^9}, {3.7893123099756527`*^9, 
+   3.7893123352860937`*^9}, {3.789312991960698*^9, 3.789313050748893*^9}, 
+   3.78931310913697*^9, {3.7893131817492857`*^9, 3.789313228573371*^9}, {
+   3.7893142675327263`*^9, 3.789314270095861*^9}},
+ CellLabel->"In[63]:=",ExpressionUUID->"411e34a4-abc9-4390-a706-fdad7ff3eaeb"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -632,9 +635,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"0.5910295478514105`", ",", "0.37507875648529765`"}], "}"}], 
        ",", "0.3`"}], "]"}]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.789145848884791*^9},
- CellLabel->
-  "Out[478]=",ExpressionUUID->"3b06b7c6-d4cb-4ef9-b569-06e848eec9f6"],
+ CellChangeTimes->{
+  3.789145848884791*^9, 3.789311872878736*^9, 3.789311988625742*^9, 
+   3.789312181299963*^9, {3.789312288522983*^9, 3.789312337585772*^9}, 
+   3.789313255905649*^9, {3.789314225266025*^9, 3.789314271285739*^9}},
+ CellLabel->"Out[64]=",ExpressionUUID->"8c06b707-8bc2-43b0-8f0f-ca4cec586488"],
 
 Cell[BoxData[
  RowBox[{"Grid", "[", 
@@ -886,153 +891,1937 @@ Cell[BoxData[
        Thickness[0.005]],
      FrameTicks->None,
      PlotRange->{{0, 1}, {0, 1}}], "}"}]}], "]"}]], "Output",
- CellChangeTimes->{3.789145848909363*^9},
- CellLabel->
-  "Out[487]=",ExpressionUUID->"36500c77-77a6-4459-841c-004a7f2437e4"]
+ CellChangeTimes->{
+  3.789145848884791*^9, 3.789311872878736*^9, 3.789311988625742*^9, 
+   3.789312181299963*^9, {3.789312288522983*^9, 3.789312337585772*^9}, 
+   3.789313255905649*^9, {3.789314225266025*^9, 3.789314271305026*^9}},
+ CellLabel->"Out[73]=",ExpressionUUID->"dda7f623-afe9-4d1f-9859-4f62a6ac35f7"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.789145790377001*^9, 
-  3.789145798052499*^9}},ExpressionUUID->"a275a96d-8faf-4826-a5d7-\
-c4e65b673300"],
+ CellChangeTimes->{{3.789314255069747*^9, 
+  3.789314262142799*^9}},ExpressionUUID->"af30446c-7faa-4aba-8217-\
+781e03b547de"],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.789145787264729*^9, 
-  3.789145787272853*^9}},ExpressionUUID->"5f1be422-6ab4-499b-af7c-\
-69ce116293d5"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.789145158836976*^9, 
-  3.789145158842575*^9}},ExpressionUUID->"d98ba76d-917e-4f92-bdb8-\
-901902d5f15e"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.789145091225416*^9, 3.7891450912319508`*^9}, {
-   3.789145261837985*^9, 3.789145285224989*^9}, 
-   3.789145791837452*^9},ExpressionUUID->"49ae942f-ee0e-4a9e-aca1-\
-7eb2fdebb6c2"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.7891457929497232`*^9, 
-  3.789145792955344*^9}},ExpressionUUID->"857ebf32-272a-47ca-8aba-\
-62eac12904de"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.7891447926593103`*^9, 3.789144797501099*^9}, 
-   3.789145092898656*^9},ExpressionUUID->"d73da462-1b40-4bcf-8e30-\
-79a4ebbfe96b"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.789144721147901*^9, 
-  3.789144723590065*^9}},ExpressionUUID->"0f41fe40-aab1-4a94-975b-\
-b1edbbcab18c"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.7891447801453457`*^9, 
-  3.789144784290348*^9}},ExpressionUUID->"6071f02f-8692-4630-b9fa-\
-61ae8f7f25f6"],
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"makeSuperTile", "[", 
+    RowBox[{"{", 
+     RowBox[{"x_", ",", " ", "y_", ",", " ", "u_", ",", " ", "v_"}], "}"}], 
+    "]"}], " ", ":=", 
+   RowBox[{"{", " ", "\[IndentingNewLine]", "\t\t\t\t\t\t\t\t\t", 
+    RowBox[{
+     RowBox[{"GeometricTransformation", "[", 
+      RowBox[{"x", ",", " ", 
+       RowBox[{"TranslationTransform", "[", " ", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}], "]"}]}], "]"}], ",", " ", 
+     "\[IndentingNewLine]", "\t\t\t\t\t\t\t\t\t", 
+     RowBox[{"GeometricTransformation", "[", 
+      RowBox[{"y", ",", " ", 
+       RowBox[{"TranslationTransform", "[", " ", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1"}], "}"}], "]"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t\t\t\t\t\t\t\t", 
+     RowBox[{"GeometricTransformation", "[", 
+      RowBox[{"u", ",", " ", 
+       RowBox[{"TranslationTransform", "[", " ", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "0"}], "}"}], "]"}]}], "]"}], ",", " ", 
+     "\[IndentingNewLine]", "\t\t\t\t\t\t\t\t\t", 
+     RowBox[{"GeometricTransformation", "[", 
+      RowBox[{"v", ",", " ", 
+       RowBox[{"TranslationTransform", "[", " ", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], "]"}]}], "]"}]}], " ", 
+    "\[IndentingNewLine]", "\t\t\t\t\t\t\t\t", "}"}]}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.789145790377001*^9, 3.789145798052499*^9}, {
+  3.78931208807974*^9, 3.789312116471703*^9}, {3.789312191199288*^9, 
+  3.789312231078038*^9}, {3.7893122688545856`*^9, 3.789312279974043*^9}, {
+  3.789312341190023*^9, 3.7893123777187643`*^9}, {3.789313236076586*^9, 
+  3.789313252363308*^9}, {3.789313448851625*^9, 3.789313486894677*^9}},
+ CellLabel->"In[74]:=",ExpressionUUID->"a275a96d-8faf-4826-a5d7-c4e65b673300"],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.789137506917005*^9, 3.789137524848484*^9}},
- CellLabel->"",ExpressionUUID->"3e48eeb0-3080-44be-806a-134ea88db0d8"],
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"superTile", " ", "=", " ", 
+     RowBox[{"makeSuperTile", "[", " ", 
+      RowBox[{"{", " ", 
+       RowBox[{"f1", ",", " ", "r9", ",", " ", "f3", ",", " ", "r27"}], "}"}],
+       " ", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", "\t\t    ", 
+     RowBox[{
+      RowBox[{"Table", "[", "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{
+        RowBox[{"GeometricTransformation", "[", 
+         RowBox[{"superTile", ",", " ", 
+          RowBox[{"TranslationTransform", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"2", " ", "*", "x"}], ",", 
+             RowBox[{"2", " ", "*", "y"}]}], "}"}], "]"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", "\t\t\t\t", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"y", ",", "0", ",", " ", "1"}], "}"}]}], 
+       "\[IndentingNewLine]", "\t\t\t", "]"}], ",", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Thickness", "[", "0.025", "]"}], ",", " ", "Black", ",", " ", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"6", ",", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"6", ",", "4"}], "}"}], ",", " ", 
+         RowBox[{"{", " ", 
+          RowBox[{"0", ",", "4"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "}"}], " ", "]"}]}], 
+     "\[IndentingNewLine]", "               ", "}"}], "\[IndentingNewLine]", 
+    "                  ", "]"}]}]}]], "Input",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellChangeTimes->{{3.789145790377001*^9, 3.789145798052499*^9}, {
+  3.78931208807974*^9, 3.789312116471703*^9}, {3.789312191199288*^9, 
+  3.789312231078038*^9}, {3.7893122688545856`*^9, 3.789312279974043*^9}, {
+  3.789312341190023*^9, 3.7893123777187643`*^9}, {3.789313236076586*^9, 
+  3.789313252363308*^9}, {3.789313448851625*^9, 3.789313486894677*^9}, {
+  3.789313534755477*^9, 3.789313561202124*^9}, {3.7893142281623707`*^9, 
+  3.789314245211125*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"2d0c10b0-506d-4022-a5c8-eef8dd8ca798"],
 
 Cell[BoxData[
- TemplateBox[{
-  "Thread","tdlen",
-   "\:f3b5Objects of unequal length in \!\(\(\(\:ff0c\)\(\\\\\\ \
-\)\({\*InterpretationBox[ButtonBox[\n    \
-TooltipBox[GraphicsBox[{{GrayLevel[0], RectangleBox[{0, 0}]}, {GrayLevel[0], \
-RectangleBox[{1, -1}]}, {RGBColor[1, 1, 0], RectangleBox[{0, -1}, {2, \
-1}]}},AspectRatio->1,DefaultBaseStyle->\\\"ColorSwatchGraphics\\\",Frame->\
-True,FrameStyle->RGBColor[0.6666666666666666, 0.6666666666666666, \
-0.],FrameTicks->None,ImageSize->Dynamic[{Automatic, 1.35 \
-CurrentValue[\\\"FontCapHeight\\\"]/AbsoluteCurrentValue[Magnification]}],\
-PlotRangePadding->None],StyleBox[RowBox[{\\\"RGBColor\\\", \\\"[\\\", \
-RowBox[{\\\"1\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"0\\\"}], \\\"]\\\"}], \
-NumberMarks -> \
-False]],Appearance->None,BaseStyle->{},BaselinePosition->Baseline,\
-ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, \
-If[Not[AbsoluteCurrentValue[\\\"Deployed\\\"]], SelectionMove[Typeset`box$, \
-All, Expression]; FrontEnd`Private`$ColorSelectorInitialAlpha = 1; \
-FrontEnd`Private`$ColorSelectorInitialColor = RGBColor[1, 1, 0]; \
-FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; \
-MathLink`CallFrontEnd[FrontEnd`AttachCell[Typeset`box$, \
-FrontEndResource[\\\"RGBColorValueSelector\\\"], {0, {Left, Bottom}}, {Left, \
-Top}, \\\"ClosingActions\\\" -> {\\\"SelectionDeparture\\\", \
-\\\"ParentChanged\\\", \
-\\\"EvaluatorQuit\\\"}]]]],DefaultBaseStyle->{},Evaluator->Automatic,Method->\
-\\\"Preemptive\\\"],RGBColor[1, 1, 0],Editable->False,Selectable->False], \
-Triangle[{{0, 0}, {0, \*FractionBox[\(1\), \(2\)]}, {1, 0}}]}\)\(\\\\\\ \)\({\
-\*InterpretationBox[ButtonBox[\n    TooltipBox[GraphicsBox[{{GrayLevel[0], \
-RectangleBox[{0, 0}]}, {GrayLevel[0], RectangleBox[{1, -1}]}, {RGBColor[1, 1, \
-0], RectangleBox[{0, -1}, {2, \
-1}]}},AspectRatio->1,DefaultBaseStyle->\\\"ColorSwatchGraphics\\\",Frame->\
-True,FrameStyle->RGBColor[0.6666666666666666, 0.6666666666666666, \
-0.],FrameTicks->None,ImageSize->Dynamic[{Automatic, 1.35 \
-CurrentValue[\\\"FontCapHeight\\\"]/AbsoluteCurrentValue[Magnification]}],\
-PlotRangePadding->None],StyleBox[RowBox[{\\\"RGBColor\\\", \\\"[\\\", \
-RowBox[{\\\"1\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"0\\\"}], \\\"]\\\"}], \
-NumberMarks -> \
-False]],Appearance->None,BaseStyle->{},BaselinePosition->Baseline,\
-ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, \
-If[Not[AbsoluteCurrentValue[\\\"Deployed\\\"]], SelectionMove[Typeset`box$, \
-All, Expression]; FrontEnd`Private`$ColorSelectorInitialAlpha = 1; \
-FrontEnd`Private`$ColorSelectorInitialColor = RGBColor[1, 1, 0]; \
-FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; \
-MathLink`CallFrontEnd[FrontEnd`AttachCell[Typeset`box$, \
-FrontEndResource[\\\"RGBColorValueSelector\\\"], {0, {Left, Bottom}}, {Left, \
-Top}, \\\"ClosingActions\\\" -> {\\\"SelectionDeparture\\\", \
-\\\"ParentChanged\\\", \
-\\\"EvaluatorQuit\\\"}]]]],DefaultBaseStyle->{},Evaluator->Automatic,Method->\
-\\\"Preemptive\\\"],RGBColor[1, 1, 0],Editable->False,Selectable->False], \
-Opacity[0.5`], Disk[{0.5`, 0.4`}, 0.3`]}\)\)\) cannot be combined.\:f3b5",2,
-   80,5,27444493695504937103,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- GeneratedCell->False,
- CellAutoOverwrite->False,
- CellChangeTimes->{{3.789137506990226*^9, 
-  3.789137518772695*^9}},ExpressionUUID->"649e9e31-5769-4cad-8daa-\
-03fb25847269"]
+ GraphicsBox[{{{
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {0, 0}}], 
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           TagBox[
+            PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {0, 2}}]}, {
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {2, 0}}], 
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {2, 2}}]}, {
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {4, 0}}], 
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           TagBox[
+            PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {4, 2}}]}}, 
+   {GrayLevel[0], Thickness[0.025], 
+    LineBox[{{0, 0}, {6, 0}, {6, 4}, {0, 4}, {0, 0}}]}}]], "Output",
+ CellChangeTimes->{{3.7893122720464287`*^9, 3.789312291466497*^9}, {
+   3.789312344702417*^9, 3.789312378742618*^9}, 3.789313258721793*^9, 
+   3.789314245944086*^9, 3.789314277708956*^9},
+ CellLabel->"Out[76]=",ExpressionUUID->"a267aabd-0a3d-4e9b-8b49-ed91f7019f0a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"superTile", " ", "=", " ", 
+   RowBox[{"makeSuperTile", "[", " ", 
+    RowBox[{"{", " ", 
+     RowBox[{"ori", ",", " ", "r9", ",", " ", "r18", ",", " ", "r27"}], "}"}],
+     " ", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", "\[IndentingNewLine]", "\t\t    ", 
+   RowBox[{
+    RowBox[{"Table", "[", "\[IndentingNewLine]", "\t\t\t", 
+     RowBox[{
+      RowBox[{"GeometricTransformation", "[", 
+       RowBox[{"superTile", ",", " ", 
+        RowBox[{"TranslationTransform", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"2", " ", "*", "x"}], ",", 
+           RowBox[{"2", " ", "*", "y"}]}], "}"}], "]"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t\t\t", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", "0", ",", " ", "1"}], "}"}]}], "\[IndentingNewLine]",
+      "\t\t\t", "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    "\t\t", 
+    RowBox[{"Thickness", "[", "0.025", "]"}], ",", " ", "Black", ",", " ", 
+    RowBox[{"Line", "[", 
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"6", ",", "0"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"6", ",", "4"}], "}"}], ",", " ", 
+       RowBox[{"{", " ", 
+        RowBox[{"0", ",", "4"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}]}], " ", "}"}], " ", "]"}]}], 
+   "\[IndentingNewLine]", "               ", "}"}], "\[IndentingNewLine]", 
+  "                  ", "]"}]}], "Input",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellChangeTimes->{{3.78931359275219*^9, 3.7893136196507387`*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"0292d4d3-a39f-42be-8494-bb105cd26afa"],
+
+Cell[BoxData[
+ GraphicsBox[{{{GeometricTransformationBox[{GeometricTransformationBox[{
+         {RGBColor[1, 
+           NCache[
+            Rational[77, 255], 0.30196078431372547`], 
+           NCache[
+            Rational[148, 255], 0.5803921568627451]], 
+          PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+         {RGBColor[1, 1, 0], 
+          
+          TagBox[PolygonBox[
+            NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {0, 0.5}, {
+              1, 0}}]],
+           "Triangle"]}, 
+         {RGBColor[0, 0, 1], Thickness[0.01], 
+          CircleBox[{0, 0}, 1, 
+           NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+         {RGBColor[
+           NCache[
+            Rational[2, 5], 0.4], 
+           NCache[
+            Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+          DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+         0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, -1}}, {1, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {0, 0}}], 
+     GeometricTransformationBox[{GeometricTransformationBox[{
+         {RGBColor[1, 
+           NCache[
+            Rational[77, 255], 0.30196078431372547`], 
+           NCache[
+            Rational[148, 255], 0.5803921568627451]], 
+          PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+         {RGBColor[1, 1, 0], 
+          
+          TagBox[PolygonBox[
+            NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {0, 0.5}, {
+              1, 0}}]],
+           "Triangle"]}, 
+         {RGBColor[0, 0, 1], Thickness[0.01], 
+          CircleBox[{0, 0}, 1, 
+           NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+         {RGBColor[
+           NCache[
+            Rational[2, 5], 0.4], 
+           NCache[
+            Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+          DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+         0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, -1}}, {1, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {0, 2}}]}, {
+     GeometricTransformationBox[{GeometricTransformationBox[{
+         {RGBColor[1, 
+           NCache[
+            Rational[77, 255], 0.30196078431372547`], 
+           NCache[
+            Rational[148, 255], 0.5803921568627451]], 
+          PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+         {RGBColor[1, 1, 0], 
+          
+          TagBox[PolygonBox[
+            NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {0, 0.5}, {
+              1, 0}}]],
+           "Triangle"]}, 
+         {RGBColor[0, 0, 1], Thickness[0.01], 
+          CircleBox[{0, 0}, 1, 
+           NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+         {RGBColor[
+           NCache[
+            Rational[2, 5], 0.4], 
+           NCache[
+            Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+          DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+         0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, -1}}, {1, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {2, 0}}], 
+     GeometricTransformationBox[{GeometricTransformationBox[{
+         {RGBColor[1, 
+           NCache[
+            Rational[77, 255], 0.30196078431372547`], 
+           NCache[
+            Rational[148, 255], 0.5803921568627451]], 
+          PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+         {RGBColor[1, 1, 0], 
+          
+          TagBox[PolygonBox[
+            NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {0, 0.5}, {
+              1, 0}}]],
+           "Triangle"]}, 
+         {RGBColor[0, 0, 1], Thickness[0.01], 
+          CircleBox[{0, 0}, 1, 
+           NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+         {RGBColor[
+           NCache[
+            Rational[2, 5], 0.4], 
+           NCache[
+            Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+          DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+         0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, -1}}, {1, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {2, 2}}]}, {
+     GeometricTransformationBox[{GeometricTransformationBox[{
+         {RGBColor[1, 
+           NCache[
+            Rational[77, 255], 0.30196078431372547`], 
+           NCache[
+            Rational[148, 255], 0.5803921568627451]], 
+          PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+         {RGBColor[1, 1, 0], 
+          
+          TagBox[PolygonBox[
+            NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {0, 0.5}, {
+              1, 0}}]],
+           "Triangle"]}, 
+         {RGBColor[0, 0, 1], Thickness[0.01], 
+          CircleBox[{0, 0}, 1, 
+           NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+         {RGBColor[
+           NCache[
+            Rational[2, 5], 0.4], 
+           NCache[
+            Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+          DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+         0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, -1}}, {1, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {4, 0}}], 
+     GeometricTransformationBox[{GeometricTransformationBox[{
+         {RGBColor[1, 
+           NCache[
+            Rational[77, 255], 0.30196078431372547`], 
+           NCache[
+            Rational[148, 255], 0.5803921568627451]], 
+          PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+         {RGBColor[1, 1, 0], 
+          
+          TagBox[PolygonBox[
+            NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {0, 0.5}, {
+              1, 0}}]],
+           "Triangle"]}, 
+         {RGBColor[0, 0, 1], Thickness[0.01], 
+          CircleBox[{0, 0}, 1, 
+           NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+         {RGBColor[
+           NCache[
+            Rational[2, 5], 0.4], 
+           NCache[
+            Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+          DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+         0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {1, 0}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, -1}}, {1, 1}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {-1, 0}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {4, 2}}]}}, 
+   {GrayLevel[0], Thickness[0.025], 
+    LineBox[{{0, 0}, {6, 0}, {6, 4}, {0, 4}, {0, 0}}]}}]], "Output",
+ CellChangeTimes->{3.789313622178978*^9, 3.7893142364468927`*^9, 
+  3.7893142797549973`*^9},
+ CellLabel->"Out[78]=",ExpressionUUID->"091d9365-c38e-4c9d-850d-3dcb28159896"]
+}, Open  ]],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.789312252192071*^9, 
+  3.789312261117482*^9}},ExpressionUUID->"074d3fa0-6039-4e07-aab8-\
+2930d16f868c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"superTile", " ", "=", " ", 
+   RowBox[{"makeSuperTile", "[", " ", 
+    RowBox[{"{", " ", 
+     RowBox[{"f4", ",", "f1", ",", " ", "f2", ",", " ", "f3"}], "}"}], " ", 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", "\[IndentingNewLine]", "\t\t    ", 
+   RowBox[{
+    RowBox[{"Table", "[", "\[IndentingNewLine]", "\t\t\t", 
+     RowBox[{
+      RowBox[{"GeometricTransformation", "[", 
+       RowBox[{"superTile", ",", " ", 
+        RowBox[{"TranslationTransform", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"2", " ", "*", "x"}], ",", 
+           RowBox[{"2", " ", "*", "y"}]}], "}"}], "]"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t\t\t", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", "0", ",", " ", "1"}], "}"}]}], "\[IndentingNewLine]",
+      "\t\t\t", "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    "\t\t", 
+    RowBox[{"Thickness", "[", "0.025", "]"}], ",", " ", "Black", ",", " ", 
+    RowBox[{"Line", "[", 
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"6", ",", "0"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"6", ",", "4"}], "}"}], ",", " ", 
+       RowBox[{"{", " ", 
+        RowBox[{"0", ",", "4"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}]}], " ", "}"}], " ", "]"}]}], 
+   "\[IndentingNewLine]", "               ", "}"}], "\[IndentingNewLine]", 
+  "                  ", "]"}]}], "Input",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellChangeTimes->{{3.789145787264729*^9, 3.789145787272853*^9}, 
+   3.789312141783806*^9, 3.789312266584086*^9, {3.789313656499702*^9, 
+   3.78931385159437*^9}},
+ CellLabel->"In[79]:=",ExpressionUUID->"5f1be422-6ab4-499b-af7c-69ce116293d5"],
+
+Cell[BoxData[
+ GraphicsBox[{{{
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {-1, 0}}, {1, 1}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {1, 0}}, {0, 0}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {0, 0}}], 
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {-1, 0}}, {1, 1}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           TagBox[
+            PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {1, 0}}, {0, 0}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {0, 2}}]}, {
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {-1, 0}}, {1, 1}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {1, 0}}, {0, 0}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {2, 0}}], 
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {-1, 0}}, {1, 1}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {1, 0}}, {0, 0}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {2, 2}}]}, {
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {-1, 0}}, {1, 1}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {1, 0}}, {0, 0}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {4, 0}}], 
+     GeometricTransformationBox[{
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{
+          0, -1}, {-1, 0}}, {1, 1}}], {{{1, 0}, {0, 1}}, {0, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           TagBox[
+            PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{-1, 
+          0}, {0, 1}}, {1, 0}}], {{{1, 0}, {0, 1}}, {1, 1}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{0, 
+          1}, {1, 0}}, {0, 0}}], {{{1, 0}, {0, 1}}, {1, 0}}], 
+       GeometricTransformationBox[GeometricTransformationBox[{
+          {RGBColor[1, 
+            NCache[
+             Rational[77, 255], 0.30196078431372547`], 
+            NCache[
+             Rational[148, 255], 0.5803921568627451]], 
+           PolygonBox[{{0, 0}, {0, 1}, {1, 1}, {1, 0}}]}, 
+          {RGBColor[1, 1, 0], 
+           
+           TagBox[PolygonBox[
+             NCache[{{0, 0}, {0, Rational[1, 2]}, {1, 0}}, {{0, 0}, {
+               0, 0.5}, {1, 0}}]],
+            "Triangle"]}, 
+          {RGBColor[0, 0, 1], Thickness[0.01], 
+           CircleBox[{0, 0}, 1, 
+            NCache[{0, Rational[1, 2] Pi}, {0, 1.5707963267948966`}]]}, 
+          {RGBColor[
+            NCache[
+             Rational[2, 5], 0.4], 
+            NCache[
+             Rational[194, 255], 0.7607843137254902], 1], Opacity[0.5], 
+           DiskBox[{0.5910295478514105, 0.37507875648529765}, 0.3]}}, {{{1, 
+          0}, {0, -1}}, {0, 1}}], {{{1, 0}, {0, 1}}, {0, 0}}]}, {{{1, 0}, {0, 
+       1}}, {4, 2}}]}}, 
+   {GrayLevel[0], Thickness[0.025], 
+    LineBox[{{0, 0}, {6, 0}, {6, 4}, {0, 4}, {0, 0}}]}}]], "Output",
+ CellChangeTimes->{3.7893142217885933`*^9, 3.789314281514256*^9},
+ CellLabel->"Out[80]=",ExpressionUUID->"5e2b8c77-2999-4700-9b0d-17aefb371031"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.78913751974405*^9, 3.789137526784893*^9}, 
-   3.7891445946597853`*^9},ExpressionUUID->"2d609761-8a26-46aa-b3c0-\
-748438271630"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.7891374413595037`*^9, 
-  3.789137452744103*^9}},ExpressionUUID->"33e065fc-f8cb-496c-9113-\
-677069bb55fd"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.789137444422435*^9, 
-  3.789137449514145*^9}},ExpressionUUID->"ab6f19b2-adcf-4400-8fd9-\
-0e1aed0e4118"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.789137447290133*^9, 
-  3.789137447690102*^9}},ExpressionUUID->"5792512d-4487-441f-8b31-\
-36226af4debb"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{3.788801908745906*^9, 
-  3.789137455026876*^9},ExpressionUUID->"6cf8727a-28df-4812-99a8-\
-71fecead66ec"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.788797019168284*^9, 3.7887970191796217`*^9}},
- CellLabel->"In[80]:=",ExpressionUUID->"53f72373-be91-4dc9-a352-b228ea71297f"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.788796102039711*^9, 3.7887961092486887`*^9}, {
-  3.788796167701783*^9, 3.7887961681216593`*^9}},
- CellLabel->"In[44]:=",ExpressionUUID->"42e10d75-5b5b-46fb-8584-d8a2de6b4c56"]
+ CellChangeTimes->{{3.789314218866243*^9, 
+  3.7893142192405157`*^9}},ExpressionUUID->"bddb202d-894f-4f49-84d9-\
+a2021f35f8cb"]
 },
-WindowSize->{1680, 1005},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1125, 1005},
+WindowMargins->{{Automatic, 11}, {Automatic, 51}},
 FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1048,29 +2837,26 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 9929, 247, 745, "Input",ExpressionUUID->"411e34a4-abc9-4390-a706-fdad7ff3eaeb"],
-Cell[10512, 271, 15210, 365, 62, "Output",ExpressionUUID->"3b06b7c6-d4cb-4ef9-b569-06e848eec9f6"],
-Cell[25725, 638, 8565, 252, 109, "Output",ExpressionUUID->"36500c77-77a6-4459-841c-004a7f2437e4"]
+Cell[580, 22, 10246, 250, 745, "Input",ExpressionUUID->"411e34a4-abc9-4390-a706-fdad7ff3eaeb"],
+Cell[10829, 274, 15397, 367, 98, "Output",ExpressionUUID->"8c06b707-8bc2-43b0-8f0f-ca4cec586488"],
+Cell[26229, 643, 8752, 254, 109, "Output",ExpressionUUID->"dda7f623-afe9-4d1f-9859-4f62a6ac35f7"]
 }, Open  ]],
-Cell[34305, 893, 152, 3, 30, InheritFromParent,ExpressionUUID->"a275a96d-8faf-4826-a5d7-c4e65b673300"],
-Cell[34460, 898, 152, 3, 30, InheritFromParent,ExpressionUUID->"5f1be422-6ab4-499b-af7c-69ce116293d5"],
-Cell[34615, 903, 152, 3, 30, InheritFromParent,ExpressionUUID->"d98ba76d-917e-4f92-bdb8-901902d5f15e"],
-Cell[34770, 908, 227, 4, 30, InheritFromParent,ExpressionUUID->"49ae942f-ee0e-4a9e-aca1-7eb2fdebb6c2"],
-Cell[35000, 914, 154, 3, 30, InheritFromParent,ExpressionUUID->"857ebf32-272a-47ca-8aba-62eac12904de"],
-Cell[35157, 919, 177, 3, 30, InheritFromParent,ExpressionUUID->"d73da462-1b40-4bcf-8e30-79a4ebbfe96b"],
-Cell[35337, 924, 152, 3, 30, InheritFromParent,ExpressionUUID->"0f41fe40-aab1-4a94-975b-b1edbbcab18c"],
-Cell[35492, 929, 154, 3, 30, InheritFromParent,ExpressionUUID->"6071f02f-8692-4630-b9fa-61ae8f7f25f6"],
+Cell[34996, 900, 152, 3, 30, InheritFromParent,ExpressionUUID->"af30446c-7faa-4aba-8217-781e03b547de"],
+Cell[35151, 905, 1805, 39, 157, "Input",ExpressionUUID->"a275a96d-8faf-4826-a5d7-c4e65b673300"],
 Cell[CellGroupData[{
-Cell[35671, 936, 163, 2, 30, InheritFromParent,ExpressionUUID->"3e48eeb0-3080-44be-806a-134ea88db0d8"],
-Cell[35837, 940, 3351, 56, 39, "Message",ExpressionUUID->"649e9e31-5769-4cad-8daa-03fb25847269"]
+Cell[36981, 948, 2356, 52, 250, "Input",ExpressionUUID->"2d0c10b0-506d-4022-a5c8-eef8dd8ca798"],
+Cell[39340, 1002, 24075, 571, 204, "Output",ExpressionUUID->"a267aabd-0a3d-4e9b-8b49-ed91f7019f0a"]
 }, Open  ]],
-Cell[39203, 999, 176, 3, 30, InheritFromParent,ExpressionUUID->"2d609761-8a26-46aa-b3c0-748438271630"],
-Cell[39382, 1004, 154, 3, 30, InheritFromParent,ExpressionUUID->"33e065fc-f8cb-496c-9113-677069bb55fd"],
-Cell[39539, 1009, 152, 3, 30, InheritFromParent,ExpressionUUID->"ab6f19b2-adcf-4400-8fd9-0e1aed0e4118"],
-Cell[39694, 1014, 152, 3, 30, InheritFromParent,ExpressionUUID->"5792512d-4487-441f-8b31-36226af4debb"],
-Cell[39849, 1019, 150, 3, 30, "Input",ExpressionUUID->"6cf8727a-28df-4812-99a8-71fecead66ec"],
-Cell[40002, 1024, 173, 2, 30, "Input",ExpressionUUID->"53f72373-be91-4dc9-a352-b228ea71297f"],
-Cell[40178, 1028, 224, 3, 30, "Input",ExpressionUUID->"42e10d75-5b5b-46fb-8584-d8a2de6b4c56"]
+Cell[CellGroupData[{
+Cell[63452, 1578, 1840, 44, 229, "Input",ExpressionUUID->"0292d4d3-a39f-42be-8494-bb105cd26afa"],
+Cell[65295, 1624, 23456, 563, 204, "Output",ExpressionUUID->"091d9365-c38e-4c9d-850d-3dcb28159896"]
+}, Open  ]],
+Cell[88766, 2190, 142, 3, 35, "Text",ExpressionUUID->"074d3fa0-6039-4e07-aab8-2930d16f868c"],
+Cell[CellGroupData[{
+Cell[88933, 2197, 1928, 46, 229, "Input",ExpressionUUID->"5f1be422-6ab4-499b-af7c-69ce116293d5"],
+Cell[90864, 2245, 23953, 569, 376, "Output",ExpressionUUID->"5e2b8c77-2999-4700-9b0d-17aefb371031"]
+}, Open  ]],
+Cell[114832, 2817, 154, 3, 30, InheritFromParent,ExpressionUUID->"bddb202d-894f-4f49-84d9-a2021f35f8cb"]
 }
 ]
 *)
