@@ -1,0 +1,531 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     18042,        522]
+NotebookOptionsPosition[     16468,        462]
+NotebookOutlinePosition[     16895,        479]
+CellTagsIndexPosition[     16852,        476]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Dilation Illustration", "Title",
+ CellChangeTimes->{{3.636568532929009*^9, 3.636568542645173*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["myMotief", "Section",
+ CellChangeTimes->{{3.6365686337256403`*^9, 3.636568639321865*^9}}],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"myMotief", " ", "=", " ", 
+     RowBox[{"{", "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Orange", ",", "\[IndentingNewLine]", "\t\t", 
+       RowBox[{"Polygon", "[", 
+        RowBox[{
+        "{", "  ", "\[IndentingNewLine]", 
+         "                                           ", "  ", " ", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", 
+            RowBox[{"-", "1"}]}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", 
+            RowBox[{"-", "1"}]}], "}"}], ",", " ", "\[IndentingNewLine]", 
+          "\t\t", "\t\t", "\t", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "1"}], "}"}], ",", "  ", "  ", "  ", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", " ", "1"}], "}"}], ",", 
+          "\[IndentingNewLine]", "\t\t\t\t\t", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", 
+            RowBox[{"-", "1"}]}], "}"}]}], "\[IndentingNewLine]", "\t\t\t ", 
+         "  ", "}"}], "]"}], ",", "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", "\t\t", "Black", ",", " ", 
+       "\[IndentingNewLine]", "\t\t", 
+       RowBox[{"Disk", "[", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}], ",", "  ", "  ", " ", "1", ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"180", " ", "Degree"}], ",", " ", 
+           RowBox[{"270", " ", "Degree"}]}], "}"}]}], " ", "]"}], ",", 
+       "\[IndentingNewLine]", "\t\t", 
+       RowBox[{"Disk", "[", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", "  ", "1", ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"270", " ", "Degree"}], ",", " ", 
+           RowBox[{"360", " ", "Degree"}]}], "}"}]}], " ", "]"}], ",", 
+       "\[IndentingNewLine]", "\t\t", 
+       RowBox[{"Disk", "[", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", 
+           RowBox[{"-", "1"}]}], "}"}], ",", "1", ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"0", " ", "Degree"}], ",", " ", 
+           RowBox[{"90", " ", "Degree"}]}], "}"}]}], " ", "]"}], ",", 
+       "\[IndentingNewLine]", "\t\t", 
+       RowBox[{"Disk", "[", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{"-", "1"}]}], "}"}], ",", "  ", "1", ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"90", " ", "Degree"}], ",", " ", 
+           RowBox[{"180", " ", "Degree"}]}], "}"}]}], " ", "]"}]}], 
+      "\[IndentingNewLine]", "  ", "}"}]}], ";"}], "\[IndentingNewLine]"}],
+  FontSize->16], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{"Graphics", "[", " ", "myMotief", "]"}],
+  FontSize->16]}], "Input",
+ CellChangeTimes->{{3.63656858063291*^9, 3.63656860942419*^9}, {
+  3.6365703346380863`*^9, 3.6365703398092127`*^9}, {3.636570376634622*^9, 
+  3.6365703794478617`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Dilating myMotief", "Section",
+ CellChangeTimes->{{3.636568645327156*^9, 3.6365686582555304`*^9}}],
+
+Cell["\<\
+Try Different Scale factors (Try  .6,  Try .3)\
+\>", "Text",
+ CellChangeTimes->{{3.636568744470707*^9, 3.636568755435712*^9}, {
+  3.6365688059699183`*^9, 3.636568827616911*^9}},
+ FontSize->18,
+ Background->GrayLevel[0.85]],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", "\[IndentingNewLine]", "\t\t", 
+  RowBox[{"Table", "[", "  ", 
+   RowBox[{
+    RowBox[{"Scale", "[", " ", 
+     RowBox[{"myMotief", ",", " ", 
+      RowBox[{".6", "^", "n"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", " ", "0", ",", "3"}], "}"}]}], " ", "]"}], 
+  "\[IndentingNewLine]", "\t", "]"}]], "Input",
+ CellChangeTimes->{{3.636568664859247*^9, 3.6365687363820047`*^9}, {
+  3.636568782900701*^9, 3.636568833082842*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Naming 3 scaled Motiefs + original\
+\>", "Section",
+ CellChangeTimes->{{3.63656900814627*^9, 3.636569055609912*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"FourDilated", " ", "=", " ", 
+    RowBox[{"Table", "[", "  ", 
+     RowBox[{
+      RowBox[{"Scale", "[", " ", 
+       RowBox[{"myMotief", ",", " ", 
+        RowBox[{"1.0", "/", 
+         RowBox[{"4", "^", "n"}]}]}], "]"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", " ", "0", ",", "3"}], "}"}]}], " ", "]"}]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", "  ", "FourDilated", " ", "]"}]}], "Input",
+ CellChangeTimes->{{3.636569062796067*^9, 3.636569091627063*^9}, {
+   3.636569294158845*^9, 3.636569354811215*^9}, 3.6365695272058973`*^9}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Putting Four of the above together", "Section",
+ CellChangeTimes->{{3.636569138790057*^9, 3.636569156728518*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"fourSquared", " ", "=", " ", 
+    RowBox[{
+    "{", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     "                           ", 
+     RowBox[{
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{"FourDilated", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"1", "/", "2"}], ",", " ", "0.5"}], "}"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", "                           ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{"FourDilated", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "1"}], "/", "2"}], ",", " ", 
+          RowBox[{"-", "0.5"}]}], "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+      "                           ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{"FourDilated", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "1"}], "/", "2"}], ",", " ", "0.5"}], "}"}]}], "]"}], 
+      ",", "\[IndentingNewLine]", "                            ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{"FourDilated", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"1", "/", "2"}], ",", " ", 
+          RowBox[{"-", "0.5"}]}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+     "}"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", " ", "fourSquared", " ", "]"}]}], "Input",
+ CellChangeTimes->{{3.636569214508419*^9, 3.63656927417301*^9}, 
+   3.6365693307583942`*^9, {3.636569427067009*^9, 3.636569429998931*^9}, {
+   3.63656956590201*^9, 3.636569575763524*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Adding Little Cyan Balls", "Section",
+ CellChangeTimes->{{3.636569783461961*^9, 3.636569794516515*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Eight little cyan balls", "Subsection",
+ CellChangeTimes->{{3.636569820221239*^9, 3.636569832239217*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"littleCyanBalls", " ", "=", " ", 
+    RowBox[{"{", "\[IndentingNewLine]", "\t\t\t\t", 
+     RowBox[{"Cyan", ",", "\[IndentingNewLine]", "\t\t\t\t", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", "\t\t\t\t\t ", 
+       RowBox[{
+        RowBox[{"Rotate", "[", "   ", 
+         RowBox[{
+          RowBox[{"Disk", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0.7", ",", " ", "0"}], "}"}], ",", "  ", ".1"}], "]"}], 
+          ",", " ", 
+          RowBox[{"13", " ", "+", 
+           RowBox[{"deg", "   ", "Degree"}]}], " ", ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        "\[IndentingNewLine]", "\t\t\t\t\t", 
+        RowBox[{"{", 
+         RowBox[{"deg", ",", " ", "0", ",", " ", "360", ",", " ", 
+          RowBox[{"360", "/", "8"}]}], "}"}]}], "\[IndentingNewLine]", 
+       "\t\t\t\t\t", "]"}]}], "\[IndentingNewLine]", "\t\t\t\t", "}"}]}], 
+   ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", " ", "littleCyanBalls", " ", "]"}]}], "Input"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["New myMotief", "Subsection",
+ CellChangeTimes->{{3.636569914757001*^9, 3.636569924526623*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"newMyMotief", " ", "=", " ", 
+    RowBox[{"{", "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Orange", ",", "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Polygon", "[", 
+       RowBox[{
+       "{", "  ", "\[IndentingNewLine]", 
+        "                                           ", "  ", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", 
+           RowBox[{"-", "1"}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{"-", "1"}]}], "}"}], ",", " ", "\[IndentingNewLine]", 
+         "\t\t", "\t\t", "\t", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}], ",", "  ", "  ", "  ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", " ", "1"}], "}"}], ",", 
+         "\[IndentingNewLine]", "\t\t\t\t\t", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", 
+           RowBox[{"-", "1"}]}], "}"}]}], "\[IndentingNewLine]", "\t\t\t ", 
+        "  ", "}"}], "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]",
+       "\t\t", "Black", ",", " ", "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Disk", "[", " ", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1"}], "}"}], ",", "  ", "  ", " ", "1", ",", " ", 
+        
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"180", " ", "Degree"}], ",", " ", 
+          RowBox[{"270", " ", "Degree"}]}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Disk", "[", " ", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", "  ", "1", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"270", " ", "Degree"}], ",", " ", 
+          RowBox[{"360", " ", "Degree"}]}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Disk", "[", " ", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1"}], ",", 
+          RowBox[{"-", "1"}]}], "}"}], ",", "1", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"0", " ", "Degree"}], ",", " ", 
+          RowBox[{"90", " ", "Degree"}]}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Disk", "[", " ", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", 
+          RowBox[{"-", "1"}]}], "}"}], ",", "  ", "1", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"90", " ", "Degree"}], ",", " ", 
+          RowBox[{"180", " ", "Degree"}]}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", "\t\t", 
+      "littleCyanBalls"}], "\[IndentingNewLine]", "           ", "}"}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", " ", "newMyMotief", " ", "]"}]}], "Input",
+ CellChangeTimes->{{3.6365699359275913`*^9, 3.636569953007894*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["New Four Dilated", "Subsection",
+ CellChangeTimes->{{3.636570068402101*^9, 3.6365700759397984`*^9}, 
+   3.63657011829315*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"newFourDilated", " ", "=", " ", 
+    RowBox[{"Table", "[", "  ", 
+     RowBox[{
+      RowBox[{"Scale", "[", " ", 
+       RowBox[{"newMyMotief", ",", " ", 
+        RowBox[{"1.0", "/", 
+         RowBox[{"4", "^", "n"}]}]}], "]"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", " ", "0", ",", "3"}], "}"}]}], " ", "]"}]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", "  ", "newFourDilated", " ", "]"}]}], "Input",
+ CellChangeTimes->{{3.636569062796067*^9, 3.636569091627063*^9}, {
+   3.636569294158845*^9, 3.636569354811215*^9}, 3.6365695272058973`*^9, {
+   3.636570042503807*^9, 3.636570061805277*^9}, {3.636570188483678*^9, 
+   3.6365701925535507`*^9}}]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["New four Squared", "Section",
+ CellChangeTimes->{{3.6365701348776293`*^9, 3.636570138697983*^9}, 
+   3.636570205081729*^9}],
+
+Cell[CellGroupData[{
+
+Cell["new four squared", "Subsection",
+ CellChangeTimes->{{3.6365705171444273`*^9, 3.636570528823111*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"newFourSquared", " ", "=", " ", 
+    RowBox[{
+    "{", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     "                           ", 
+     RowBox[{
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{"newFourDilated", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"1", "/", "2"}], ",", " ", "0.5"}], "}"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", "                           ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{"newFourDilated", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "1"}], "/", "2"}], ",", " ", 
+          RowBox[{"-", "0.5"}]}], "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+      "                           ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{"newFourDilated", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "1"}], "/", "2"}], ",", " ", "0.5"}], "}"}]}], "]"}], 
+      ",", "\[IndentingNewLine]", "                            ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{"newFourDilated", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"1", "/", "2"}], ",", " ", 
+          RowBox[{"-", "0.5"}]}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+     "}"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", " ", "newFourSquared", " ", "]"}]}], "Input",
+ CellChangeTimes->{{3.636569214508419*^9, 3.63656927417301*^9}, 
+   3.6365693307583942`*^9, {3.636569427067009*^9, 3.636569429998931*^9}, {
+   3.63656956590201*^9, 3.636569575763524*^9}, {3.636570143893407*^9, 
+   3.636570176486635*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Dilate some more", "Subsection",
+ CellChangeTimes->{{3.636570295934682*^9, 3.636570308662199*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", "\t\t\t", 
+    RowBox[{"newFourSquared", ",", "\[IndentingNewLine]", "\t\t\t", 
+     RowBox[{"Scale", "[", " ", 
+      RowBox[{"newFourSquared", ",", " ", 
+       RowBox[{"1", "/", "3"}]}], "]"}], ",", "\[IndentingNewLine]", "\t\t\t", 
+     RowBox[{"Scale", "[", " ", 
+      RowBox[{"newFourSquared", ",", " ", 
+       RowBox[{"1", "/", "9"}]}], "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+   " ", 
+   RowBox[{"PlotRange", "\[Rule]", " ", "1"}], ",", " ", 
+   RowBox[{"ImageSize", "\[Rule]", " ", "500"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6365702606499577`*^9, 3.636570287870578*^9}}]
+}, Closed]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{729, 756},
+WindowMargins->{{Automatic, 162}, {Automatic, 46}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, \
+2011)",
+StyleDefinitions->FrontEnd`FileName[{"Creative"}, "PrimaryColor.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 104, 1, 76, "Title"],
+Cell[CellGroupData[{
+Cell[708, 27, 95, 1, 68, "Section"],
+Cell[806, 30, 3075, 79, 342, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3918, 114, 104, 1, 38, "Section"],
+Cell[4025, 117, 232, 6, 48, "Text"],
+Cell[4260, 125, 484, 11, 68, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[4781, 141, 126, 3, 38, "Section"],
+Cell[4910, 146, 663, 15, 83, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[5610, 166, 119, 1, 38, "Section"],
+Cell[5732, 169, 2010, 51, 158, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[7779, 225, 109, 1, 38, "Section"],
+Cell[CellGroupData[{
+Cell[7913, 230, 111, 1, 34, "Subsection"],
+Cell[8027, 233, 1139, 26, 173, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9203, 264, 100, 1, 26, "Subsection"],
+Cell[9306, 267, 2959, 75, 293, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[12302, 347, 131, 2, 26, "Subsection"],
+Cell[12436, 351, 774, 17, 83, "Input"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13259, 374, 129, 2, 68, "Section"],
+Cell[CellGroupData[{
+Cell[13413, 380, 106, 1, 34, "Subsection"],
+Cell[13522, 383, 2078, 52, 158, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[15637, 440, 104, 1, 26, "Subsection"],
+Cell[15744, 443, 684, 14, 98, "Input"]
+}, Closed]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

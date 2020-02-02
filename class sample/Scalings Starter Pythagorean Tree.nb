@@ -1,0 +1,1127 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     43183,       1118]
+NotebookOptionsPosition[     42021,       1073]
+NotebookOutlinePosition[     42447,       1090]
+CellTagsIndexPosition[     42404,       1087]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Scaling - Pythagorean Tree", "Title",
+ CellChangeTimes->{{3.636408683487505*^9, 3.636408706549312*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["myMotief framed", "Section",
+ CellChangeTimes->{{3.533835743346656*^9, 3.533835779119924*^9}, {
+  3.5339960418957663`*^9, 3.533996061302059*^9}, {3.5339967710474567`*^9, 
+  3.504373473172078*^9}, {3.636212385807332*^9, 3.636212387092185*^9}, {
+  3.636219830591399*^9, 3.6362198410895233`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"myMotief", " ", "=", " ", 
+    RowBox[{
+    "{", "\[IndentingNewLine]", "\t\t\t", "\[IndentingNewLine]", "\t\t", 
+     RowBox[{
+     "Thick", ",", " ", "Blue", ",", "\[IndentingNewLine]", "\t\t\t", 
+      RowBox[{"(*", " ", 
+       RowBox[{"Fill", " ", "in", " ", "Your", " ", "Own", " ", "Design"}], 
+       " ", "*)"}], "\[IndentingNewLine]", "\t\t\t", 
+      RowBox[{"Text", "[", " ", 
+       RowBox[{"\"\<Fill in Your Own Design\>\"", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{".5", ",", " ", "0.5"}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", "\t\t", "Black", ",", " ",
+       "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", "\[IndentingNewLine]", "\t\t\t", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}], " ", ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], "\[IndentingNewLine]", "\t\t", 
+        "}"}], "]"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", "\t\t", 
+     "}"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"...", "..."}], "..."}], "..."}], " ", "You", " ", 
+        RowBox[{"Don", "'"}], "t", " ", "need", " ", "to", " ", "change", " ",
+         "anything", " ", "below", " ", "this", " ", "line"}], " ", "..."}], 
+      "..."}], "..."}], "."}], "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\t", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Setting", " ", "the", " ", "\"\<Graph Paper\>\"", "\[IndentingNewLine]", 
+    "          ", "1", " ", "x", " ", "1", " ", "square"}], 
+   "\[IndentingNewLine]", "  ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"settingGraph", " ", "=", " ", 
+    RowBox[{"{", "\[IndentingNewLine]", "\t\t\t\t ", 
+     RowBox[{
+      RowBox[{"PlotRange", "\[Rule]", " ", 
+       RowBox[{"{", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", 
+      "\[IndentingNewLine]", "\t\t\t\t", 
+      RowBox[{"AspectRatio", "\[Rule]", " ", "1"}], ",", 
+      "\[IndentingNewLine]", "\t\t\t\t", 
+      RowBox[{"Axes", "\[Rule]", " ", "True"}]}], "\[IndentingNewLine]", 
+     "\t\t\t", "}"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\t", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Grid", " ", "lines"}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"gridLines", " ", "=", " ", 
+    RowBox[{"{", "   ", 
+     RowBox[{"Dashed", ",", "\[IndentingNewLine]", "\t\t\t", 
+      RowBox[{"Table", "[", " ", 
+       RowBox[{
+        RowBox[{"Line", "[", " ", 
+         RowBox[{"{", "  ", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "i"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "i"}], "}"}]}], "  ", "}"}], " ", "]"}], ",", 
+        "\[IndentingNewLine]", "\t\t\t\t", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "0", ",", "1", ",", " ", "0.1"}], "}"}]}], 
+       "\[IndentingNewLine]", "\t\t\t\t", "]"}], ",", "\[IndentingNewLine]", 
+      "\t\t\t", 
+      RowBox[{"Table", "[", " ", 
+       RowBox[{
+        RowBox[{"Line", "[", " ", 
+         RowBox[{"{", "  ", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"i", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"i", ",", "1"}], "}"}]}], "  ", "}"}], " ", "]"}], ",", 
+        "\[IndentingNewLine]", "\t\t\t\t", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "0", ",", "1", ",", " ", "0.1"}], "}"}]}], 
+       "\[IndentingNewLine]", "\t\t\t\t", "]"}]}], "\[IndentingNewLine]", 
+     "\t\t", "}"}]}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"GraphicsGrid", "[", 
+  RowBox[{"{", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics", "[", " ", 
+      RowBox[{
+       RowBox[{"{", "\[IndentingNewLine]", "\t\t\t", 
+        RowBox[{
+        "gridLines", " ", ",", "\[IndentingNewLine]", "\t\t\t", "myMotief"}], 
+        "\[IndentingNewLine]", "\t\t", "}"}], ",", " ", "\[IndentingNewLine]",
+        "\t\t\t", "settingGraph", ",", " ", 
+       RowBox[{"Frame", "\[Rule]", " ", "True"}], ",", " ", 
+       RowBox[{"ImageSize", "\[Rule]", " ", "400"}]}], "\[IndentingNewLine]", 
+      "\t\t", "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", " ", 
+      RowBox[{"myMotief", ",", " ", 
+       RowBox[{"ImageSize", "\[Rule]", " ", "400"}]}], "]"}]}], 
+    "\[IndentingNewLine]", "}"}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->CompressedData["
+1:eJwdzEsoA3AAx/FFGAdGmAPWpInL1pJH2bK2hCyasYhl2sKUTShEHoexZeZR
+c1BMlFKysFiRR/LYPAulFdlcTO1CZpby/+3w63P6fZnNGokqjEKhMMggR72g
+4Um9gsdj2hiccDcaodQpNENzn+wQaosNF3Am4dYNHalfIY0n0V7ImFWFZCUz
+NwXEnGDWFkx5j9qB+dt+O3yS7x/C5ZbEI7jyqj+rIA6yaedQ23uVLUbH5OLA
+SWpR0xRxo9/VDUVi5TqUlNRbYaJ8dw9+2yI/41K9Ast9bjiNWFA3HPI6l0+F
+jhRbEuwdyGPALZ+FBbP812w4Or3MgTypqhSOW4vLofx0qBrWxiob4BuVq4CZ
+a04V/NFVqaFdaGuHhp6zAyibuzmFS4seB0zP4D1Ay3yCC7YufvigQs//Df3E
+rZR4orlN0QSpEc+dUB30DMHBpb8R+F31HkgjBpxdv7DMcsfV0T8EyoNLEZQl
+v1RA0yq9EtJrWAE9UVLYEWMg/gPBkN5K
+  "]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["One  Branch Up", "Section",
+ CellChangeTimes->{{3.6364087645855837`*^9, 3.6364087745486727`*^9}, {
+  3.636411706435988*^9, 3.636411725304538*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}], ",", "\[IndentingNewLine]", "\t\t", 
+   RowBox[{"ImageSize", "\[Rule]", " ", "500"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.636315882643258*^9, 3.636316021664782*^9}, {
+  3.636316058272224*^9, 3.63631616845975*^9}, {3.636316343905692*^9, 
+  3.636316454818602*^9}, {3.6364087907539177`*^9, 3.636408795879944*^9}, {
+  3.63641162330509*^9, 3.6364116902550364`*^9}, {3.636411730277009*^9, 
+  3.636411738892206*^9}, {3.6364128604975557`*^9, 3.636412861801985*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Two  Branches Up", "Section",
+ CellChangeTimes->{{3.6364087645855837`*^9, 3.6364087745486727`*^9}, {
+  3.636411706435988*^9, 3.636411725304538*^9}, {3.636411777057374*^9, 
+  3.636411780566798*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"oneBranchUp", " ", "=", 
+    RowBox[{"{", "  ", 
+     RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Rotate", "[", 
+         RowBox[{
+          RowBox[{"Scale", "[", 
+           RowBox[{"myMotief", ",", " ", 
+            RowBox[{"1.0", "/", 
+             RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+          RowBox[{"45", " ", "Degree"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{
+          RowBox[{"Rotate", "[", "  ", 
+           RowBox[{"myMotief", ",", " ", 
+            RowBox[{
+             RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+          RowBox[{"1.0", "/", 
+           RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+     "\t     ", "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"oneBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"oneBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}], ",", "\[IndentingNewLine]", "\t\t", 
+   RowBox[{"ImageSize", "\[Rule]", " ", "500"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.636315882643258*^9, 3.636316021664782*^9}, {
+  3.636316058272224*^9, 3.63631616845975*^9}, {3.636316343905692*^9, 
+  3.636316454818602*^9}, {3.6364087907539177`*^9, 3.636408795879944*^9}, {
+  3.63641162330509*^9, 3.6364116902550364`*^9}, {3.636411730277009*^9, 
+  3.636411738892206*^9}, {3.636411784188375*^9, 3.636411825189724*^9}, {
+  3.6364128623895473`*^9, 3.636412864149352*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Three  Branches Up", "Section",
+ CellChangeTimes->{{3.6364087645855837`*^9, 3.6364087745486727`*^9}, {
+  3.636411706435988*^9, 3.636411725304538*^9}, {3.636411777057374*^9, 
+  3.636411780566798*^9}, {3.636411850454677*^9, 3.636411851348548*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"oneBranchUp", " ", "=", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"twoBranchUp", " ", "=", " ", 
+    RowBox[{"{", "  ", 
+     RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Rotate", "[", 
+         RowBox[{
+          RowBox[{"Scale", "[", 
+           RowBox[{"oneBranchUp", ",", " ", 
+            RowBox[{"1.0", "/", 
+             RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+          RowBox[{"45", " ", "Degree"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{
+          RowBox[{"Rotate", "[", "  ", 
+           RowBox[{"oneBranchUp", ",", " ", 
+            RowBox[{
+             RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+          RowBox[{"1.0", "/", 
+           RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+     "\t     ", "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"twoBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"twoBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}], ",", "\[IndentingNewLine]", "\t\t", 
+   RowBox[{"ImageSize", "\[Rule]", " ", "500"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.636315882643258*^9, 3.636316021664782*^9}, {
+  3.636316058272224*^9, 3.63631616845975*^9}, {3.636316343905692*^9, 
+  3.636316454818602*^9}, {3.6364087907539177`*^9, 3.636408795879944*^9}, {
+  3.63641162330509*^9, 3.6364116902550364`*^9}, {3.636411730277009*^9, 
+  3.636411738892206*^9}, {3.636411784188375*^9, 3.636411825189724*^9}, {
+  3.6364118578301487`*^9, 3.636411915547349*^9}, {3.636412864799416*^9, 
+  3.6364128670643797`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Four  Branches Up", "Section",
+ CellChangeTimes->{{3.6364087645855837`*^9, 3.6364087745486727`*^9}, {
+  3.636411706435988*^9, 3.636411725304538*^9}, {3.636411777057374*^9, 
+  3.636411780566798*^9}, {3.636411850454677*^9, 3.636411851348548*^9}, {
+  3.636411946043919*^9, 3.636411946953821*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"oneBranchUp", " ", "=", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"twoBranchUp", " ", "=", " ", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"oneBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"oneBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"threeBranchUp", " ", "=", " ", 
+    RowBox[{"{", "  ", 
+     RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Rotate", "[", 
+         RowBox[{
+          RowBox[{"Scale", "[", 
+           RowBox[{"twoBranchUp", ",", " ", 
+            RowBox[{"1.0", "/", 
+             RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+          RowBox[{"45", " ", "Degree"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{
+          RowBox[{"Rotate", "[", "  ", 
+           RowBox[{"twoBranchUp", ",", " ", 
+            RowBox[{
+             RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+          RowBox[{"1.0", "/", 
+           RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+     "\t     ", "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"threeBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"threeBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}], ",", "\[IndentingNewLine]", "\t\t", 
+   RowBox[{"ImageSize", "\[Rule]", " ", "500"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.636315882643258*^9, 3.636316021664782*^9}, {
+  3.636316058272224*^9, 3.63631616845975*^9}, {3.636316343905692*^9, 
+  3.636316454818602*^9}, {3.6364087907539177`*^9, 3.636408795879944*^9}, {
+  3.63641162330509*^9, 3.6364116902550364`*^9}, {3.636411730277009*^9, 
+  3.636411738892206*^9}, {3.636411784188375*^9, 3.636411825189724*^9}, {
+  3.6364118578301487`*^9, 3.636411915547349*^9}, {3.636411959954035*^9, 
+  3.636411983967016*^9}, {3.636412867666912*^9, 3.636412870402459*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Five  Branches Up  -- Starts OverLapping\
+\>", "Section",
+ CellChangeTimes->{{3.6364087645855837`*^9, 3.6364087745486727`*^9}, {
+  3.636411706435988*^9, 3.636411725304538*^9}, {3.636411777057374*^9, 
+  3.636411780566798*^9}, {3.636411850454677*^9, 3.636411851348548*^9}, {
+  3.636411946043919*^9, 3.636411946953821*^9}, {3.636412013514422*^9, 
+  3.636412019879421*^9}, {3.636412252138077*^9, 3.636412253936225*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"oneBranchUp", " ", "=", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"twoBranchUp", " ", "=", " ", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"oneBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"oneBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"threeBranchUp", " ", "=", " ", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"twoBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"twoBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"fourBranchUp", " ", "=", " ", 
+    RowBox[{"{", "  ", 
+     RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Rotate", "[", 
+         RowBox[{
+          RowBox[{"Scale", "[", 
+           RowBox[{"threeBranchUp", ",", " ", 
+            RowBox[{"1.0", "/", 
+             RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+          RowBox[{"45", " ", "Degree"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{
+          RowBox[{"Rotate", "[", "  ", 
+           RowBox[{"threeBranchUp", ",", " ", 
+            RowBox[{
+             RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+          RowBox[{"1.0", "/", 
+           RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+     "\t     ", "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"fourBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"fourBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}], ",", "\[IndentingNewLine]", "\t\t", 
+   RowBox[{"ImageSize", "\[Rule]", " ", "500"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.636315882643258*^9, 3.636316021664782*^9}, {
+  3.636316058272224*^9, 3.63631616845975*^9}, {3.636316343905692*^9, 
+  3.636316454818602*^9}, {3.6364087907539177`*^9, 3.636408795879944*^9}, {
+  3.63641162330509*^9, 3.6364116902550364`*^9}, {3.636411730277009*^9, 
+  3.636411738892206*^9}, {3.636411784188375*^9, 3.636411825189724*^9}, {
+  3.6364118578301487`*^9, 3.636411915547349*^9}, {3.636411959954035*^9, 
+  3.636411983967016*^9}, {3.636412031959735*^9, 3.636412061607567*^9}, {
+  3.636412871043532*^9, 3.636412874948756*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+SIx  Branches Up  -- More OverLapping\
+\>", "Section",
+ CellChangeTimes->{{3.6364087645855837`*^9, 3.6364087745486727`*^9}, {
+  3.636411706435988*^9, 3.636411725304538*^9}, {3.636411777057374*^9, 
+  3.636411780566798*^9}, {3.636411850454677*^9, 3.636411851348548*^9}, {
+  3.636411946043919*^9, 3.636411946953821*^9}, {3.636412013514422*^9, 
+  3.636412019879421*^9}, {3.636412252138077*^9, 3.6364122741595507`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"oneBranchUp", " ", "=", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"myMotief", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"twoBranchUp", " ", "=", " ", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"oneBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"oneBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"threeBranchUp", " ", "=", " ", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"twoBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"twoBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fourBranchUp", " ", "=", " ", 
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"threeBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"threeBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"fiveBranchUp", " ", "=", " ", 
+    RowBox[{"{", "  ", 
+     RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Rotate", "[", 
+         RowBox[{
+          RowBox[{"Scale", "[", 
+           RowBox[{"fourBranchUp", ",", " ", 
+            RowBox[{"1.0", "/", 
+             RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+          RowBox[{"45", " ", "Degree"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Scale", "[", 
+         RowBox[{
+          RowBox[{"Rotate", "[", "  ", 
+           RowBox[{"fourBranchUp", ",", " ", 
+            RowBox[{
+             RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+          RowBox[{"1.0", "/", 
+           RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+     "\t     ", "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", "  ", 
+    RowBox[{"myMotief", ",", " ", "\[IndentingNewLine]", "\t\t ", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{"fiveBranchUp", ",", " ", 
+           RowBox[{"1.0", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"45", " ", "Degree"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], " ", "]"}], ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Scale", "[", 
+        RowBox[{
+         RowBox[{"Rotate", "[", "  ", 
+          RowBox[{"fiveBranchUp", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "4"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", " ", 
+         RowBox[{"1.0", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], " ", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\t     ", "}"}], ",", "\[IndentingNewLine]", "\t\t", 
+   RowBox[{"ImageSize", "\[Rule]", " ", "500"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.636315882643258*^9, 3.636316021664782*^9}, {
+  3.636316058272224*^9, 3.63631616845975*^9}, {3.636316343905692*^9, 
+  3.636316454818602*^9}, {3.6364087907539177`*^9, 3.636408795879944*^9}, {
+  3.63641162330509*^9, 3.6364116902550364`*^9}, {3.636411730277009*^9, 
+  3.636411738892206*^9}, {3.636411784188375*^9, 3.636411825189724*^9}, {
+  3.6364118578301487`*^9, 3.636411915547349*^9}, {3.636411959954035*^9, 
+  3.636411983967016*^9}, {3.636412031959735*^9, 3.636412061607567*^9}, {
+  3.636412284720118*^9, 3.636412311810219*^9}, {3.6364128758825073`*^9, 
+  3.636412881826724*^9}}]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{1161, 778},
+WindowMargins->{{87, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, \
+2011)",
+StyleDefinitions->FrontEnd`FileName[{"Creative"}, "PrimaryColor.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 109, 1, 76, "Title"],
+Cell[CellGroupData[{
+Cell[713, 27, 299, 4, 68, "Section"],
+Cell[1015, 33, 5629, 133, 855, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[6681, 171, 152, 2, 38, "Section"],
+Cell[6836, 175, 1838, 43, 98, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[8711, 223, 203, 3, 38, "Section"],
+Cell[8917, 228, 3373, 83, 173, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[12327, 316, 251, 3, 38, "Section"],
+Cell[12581, 321, 4838, 121, 233, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[17456, 447, 299, 4, 38, "Section"],
+Cell[17758, 453, 6302, 158, 293, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[24097, 616, 425, 7, 38, "Section"],
+Cell[24525, 625, 7768, 196, 353, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[32330, 826, 424, 7, 38, "Section"],
+Cell[32757, 835, 9236, 234, 413, "Input"]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
